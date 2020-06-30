@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/VueMathPage/'
+    ? '/' + process.env.CI_PROJECT_NAME + '/'
     : '/',
     outputDir: 'docs',
     assetsDir: './',
