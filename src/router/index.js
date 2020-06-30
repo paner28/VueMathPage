@@ -139,8 +139,10 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: process.env.ROOT_BASE,
+  scrollBehavior,
   routes
+  linkActiveClass: 'active'
 })
 
 export default router
