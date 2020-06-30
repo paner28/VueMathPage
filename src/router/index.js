@@ -139,7 +139,7 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.ROOT_BASE,
+  base: '"VueMathPage/"',
   scrollBehavior,
   routes
   linkActiveClass: 'active'
